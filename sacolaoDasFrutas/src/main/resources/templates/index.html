@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sacolão das Frutas</title>
+<style>
+body {
+	background-image: url("https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+}
+h1, h2 {
+color: white !important;
+}
+</style>
+<!-- Link do Bootstrap -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+	crossorigin="anonymous">
+</head>
+<style>
+h1, h2 {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 
+  black;
+}
+</style>
+<body>
+	<br>
+	<h1 class="text-center">Bem-vindo ao Sacolão das Frutas</h1>
+	<br>
+	
+	<h2 class="text-center">Frutas</h2>
+	<br>
+	
+	<div class="container text-center">
+	<ul class="list-group">
+		<li><a class="btn btn-dark btn-lg" th:href="@{/cadastrarFruta}">Cadastrar Fruta</a></li>
+		<br>
+		<li><a class="btn btn-dark btn-lg" th:href="@{/listarFrutas}">Listar Frutas</a></li>
+	</ul>
+	<br>
+	
+	<h2>Categorias</h2>
+	<br>
+
+	<ul class="list-group">
+		<li><a class="btn btn-dark btn-lg" th:href="@{/cadastrarCategoria}">Cadastrar Categoria</a></li>
+		<br>
+		<li><a class="btn btn-dark btn-lg" th:href="@{/listarCategorias}">Listar Categorias</a></li>
+	</ul>
+</div>
+</body>
+</html>
